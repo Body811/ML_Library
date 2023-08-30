@@ -76,20 +76,23 @@ class linearRegression(MLAlgorithm):
 
 
 class MLModel(MLAlgorithm):
-    """
-    Wrapper class for an MLAlgorithm instance.
+    """Wrapper class used for implementing the strategy pattern"""
 
-    This class provides a higher-level interface for fitting and predicting using the chosen algorithm.
-
-    Attributes:
-        algorithm (MLAlgorithm): The machine learning algorithm to use.
-    """
-    
     
     def __init__(self, algorithm):
         self.algorithm = algorithm
 
     def set_algorithm(self,algorithm):
+        """
+        Changes the active algorithm 
+        
+        Args:
+            algorithm (MLAlgorithm): The algorithm you want to change to
+            
+        Return:
+            None   
+        """
+        
         self.algorithm = algorithm
 
     def fit(self, x, y):
