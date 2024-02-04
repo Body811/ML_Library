@@ -1,0 +1,75 @@
+<mxfile host="65bd71144e">
+    <diagram id="oGozT7ml_9ITFYytoBWH" name="Page-1">
+        <mxGraphModel dx="1978" dy="992" grid="1" gridSize="10" guides="1" tooltips="1" connect="0" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;MLAlgorithm&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ fit(x: ndarray, y: ndarray): None&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;+ predict(x: ndarray): ndarray&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="20" width="200" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" style="edgeStyle=none;html=1;dashed=1;endArrow=block;endFill=0;" edge="1" parent="1" source="4">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="140" y="110" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="4" value="LogisticRegression" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;rotation=0;" vertex="1" parent="1">
+                    <mxGeometry x="-15" y="250" width="310" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="- alpha: float&#10;- epsilon: float&#10;- theta: float&#10;- bisa: float&#10;- max_iter: int&#10;- graph: bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotation=0;" vertex="1" parent="4">
+                    <mxGeometry y="26" width="310" height="94" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="4">
+                    <mxGeometry y="120" width="310" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="- segmoid(z: float): float&#10;- compute_gradient(x: ndarray, y: ndarray, theta: ndarray,&#10;                            bias: float, m: int): (float, float)&#10;- compute_cost(x: ndarray, y: ndarray, theta: ndarray, &#10;                            bias: float, m: int): float&#10;+ fit(x: ndarray, y: ndarray): None&#10;+ predict(x: ndarray): ndarray" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotation=0;" vertex="1" parent="4">
+                    <mxGeometry y="128" width="310" height="112" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" style="edgeStyle=none;html=1;entryX=0.152;entryY=1.033;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;endArrow=block;endFill=0;" edge="1" parent="1" source="8" target="2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="LinearRegression" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;rotation=0;" vertex="1" parent="1">
+                    <mxGeometry x="-420" y="250" width="320" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="- alpha: float&#10;- epsilon: float&#10;- theta: ndarray&#10;- bisa: float&#10;- max_iter: int&#10;- graph: bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8">
+                    <mxGeometry y="26" width="320" height="94" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="8">
+                    <mxGeometry y="120" width="320" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="- compute_cost(x: ndarray, y: ndarray, theta: ndarray,&#10;                            bias: float, m: int): float&#10;- compute_gradient(x: ndarray, y: ndarray, theta: ndarray,&#10;                            bias: float, m: int): (float, float)&#10;+ fit(x: ndarray, y: ndarray): None&#10;+ predict(x: ndarray): ndarray" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="8">
+                    <mxGeometry y="128" width="320" height="112" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" style="edgeStyle=none;html=1;entryX=0.888;entryY=1.003;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;endArrow=block;endFill=0;" edge="1" parent="1" source="12" target="2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="KMeans" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;rotation=0;" vertex="1" parent="1">
+                    <mxGeometry x="380" y="250" width="390" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="- k: int&#10;- max_iter: int&#10;- max_init: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="12">
+                    <mxGeometry y="26" width="390" height="64" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="12">
+                    <mxGeometry y="90" width="390" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="- init_centroids(x: ndarray): ndarray&#10;- find_closest_centroids(x: ndarray, centroids: ndarray): (ndarray, float)&#10;- compute_centroids(x: ndarray, idx: ndarray): ndarray&#10;- single_fit(x: ndarray): (ndarray, ndarray, float)&#10;+ fit(x: ndarray): None&#10;+predict(x: ndarray): ndarray" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="12">
+                    <mxGeometry y="98" width="390" height="142" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" style="edgeStyle=none;html=1;endArrow=open;endFill=0;" edge="1" parent="1" source="19" target="2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="MLModel" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+                    <mxGeometry x="490" width="280" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="algorithm: Algorithm" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="19">
+                    <mxGeometry y="26" width="280" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="19">
+                    <mxGeometry y="52" width="280" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="+ fit(x: ndarray, y: ndarray): None&#10;+ predict(x: ndarray): ndarray&#10;+ set_algorithm(algorithm: MLAlgorithm): None" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="19">
+                    <mxGeometry y="60" width="280" height="70" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
