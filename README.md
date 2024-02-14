@@ -13,7 +13,6 @@ git clone https://github.com/Body811/ML_Library.git
 <li>Create logistic regression models</li>
 <li>Create KMeans clustering models</li>
 <li>Compute accuracy of predictions</li>
-<li></li>
 </ul>
 
 ## Usage
