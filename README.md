@@ -45,3 +45,6 @@ accuracy = MLAlgorithmLibrary.compute_accuracy(predictions, y_test)
 print("Accuracy:", accuracy)
 ```
 
+## Library Design 
+
+![Diagram](ClassDiagram.svg)
